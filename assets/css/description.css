@@ -1,0 +1,121 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+label{
+    display: block;
+}
+
+.main-container{
+    overflow-y: scroll;
+    height: 75%;
+    background-color: #a6d1bb59;
+}
+
+.project-details-container{
+    display: inline-flex;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: first baseline;
+}
+.project-title{
+    width: 20%;
+    padding-right: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.project-desc{
+    padding-bottom: 1%;
+    padding-left: 0.5%;
+    width: 85%;
+    border-left: 3px solid #589f67;
+    border-right: 3px solid #589f67;
+}
+
+.buttons-container{
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+
+.button{
+    font-size: 18px;
+}
+
+
+.issue{
+    margin-left: 6%;
+    margin-top: 2%;
+    background-color: #cae9e5;
+    border-radius: 1.2rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.new-issue-form{
+    background-color: #a6d1bb59;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 1%;
+    border-radius: 1.2rem;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.issue-input{
+    margin:2%;
+}
+
+.button{
+    margin-left: 2.5%;
+}
+
+.issue-container{
+    padding-bottom: 2%;
+    width: 95%;
+}
+
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross{
+    margin-left: 97%;
+    height: 1%;
+    width: 2%;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.cross:hover{
+    border: 1px solid red;
+}
+
+.issue-container{
+    display: none;
+}
+
+.search-issues{
+   display: flex;
+   justify-content: space-around;
+   background-color: #589f67;
+   margin-left: 6%;
+   padding: 2%;
+   border-radius: 1.2rem;
+}

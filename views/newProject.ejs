@@ -1,0 +1,16 @@
+<link href="/css/newProject.css" rel="stylesheet">
+<body>
+    <p class="head1" style="margin-left:5% ;">Create new project</p>
+    <div class="project-container">
+        <label class="head2" style="margin-left:3% ;" >Please fill below details</label>
+        <form action="/project/create-new" method="POST">
+            <textarea name="title" required placeholder="Title" class="text" cols="100" rows="1" style="margin-top:2% ;"></textarea>
+            <textarea name="description" required placeholder="Description" class="text" cols="100" rows="6"></textarea>
+            <textarea name="author" required placeholder="Author" class="text" cols="100" rows="1"></textarea>
+            <div class="buttons-container">
+                <button class="button" type="reset">Reset</button>
+                <button class="button" type="submit">Create</button>
+            </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,63 @@
+<link href="/css/description.css" rel="stylesheet">
+<body>
+    
+    <div class="main-container">
+        <div class="project-container" id="project-container">
+            <div>
+                <p class="head1">Project Description</p>
+            </div>
+            <div class="project-details-container">
+                <div class="project-title">
+                    <label class="head2"><%=project.title%></label>
+                    <label class="project-details text"><%=project.author%></label>
+                </div>
+                <div class="project-desc text">
+                    <label class="head2" style="text-align: center; margin-bottom:2% ;">Description</label>
+                    <label><%=project.description%></label>
+                </div>
+                <div class="buttons-container">
+                    <button class="create-issue button"  type="submit" id="create-issue-<%=project._id%>">Create issue</button>
+                    <button class="show-issue button"  type="submit" id="show-issue-<%=project._id%>">Show issue</button>
+                </div>
+            </div>
+            <div class="issue-container" id="issue-container">
+                <p class="head1" style="display:block ;">Issue-details</p>
+                <div class="search-issues text">
+                    
+                    <input style="width:40%;border-radius: 1.2rem; padding-left:1% ;" id="searchbyname" class="text" style="margin-left: 5% ;" type="search" placeholder="Search by title or description">
+                    <input style="width:40%;border-radius: 1.2rem; padding-left:1% ;" id="searchbylabel" class="text" style="margin-left: 5% ;" type="search" placeholder="Search by labels seperated by space">
+                </div>
+                <div id="issues">
+
+                </div>    
+            </div>
+        </div>
+    
+        <div class="new-issue-form" id="new-issue-form">
+            <div class="cross" >
+                <img id="cross" src="/images/close.svg" height="100%">
+            </div>
+            <div class="form-heading">   
+                <label class="head1"><%=project.title%></label>
+                <label class="head2" style="text-align:center; margin-top: 5%;">Create new issue</label>
+            </div>
+
+            <div >
+                <form action="/issue/create" method="POST" class="form-inputs">
+                    <input required style="width:90%;" class="text issue-input" type="text" name="title" placeholder="Title">
+                    <textarea required style="width:90%;" class="text issue-input" name="description" placeholder="Description" cols="50" rows="4"></textarea>
+                    <input style="width:90%;" type="hidden" name="project" id="project-input">
+                    <input required style="width:90%;" class="text issue-input" type="text" name="author" placeholder="Author">
+                    <input style="width:90%;" class="text issue-input" type="text" name="labels" placeholder="Please type all labels seperated by space">
+                    <div class="form-buttons">
+                        <input class="button" type="reset" value="Reset">
+                        <input class="button" type="submit" value="Create">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="/js/descriptionpage.js"></script>
+</body>

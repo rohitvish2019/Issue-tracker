@@ -1,0 +1,16 @@
+.project-header{
+    height: 40px;
+    width: 100%;
+}
+
+.project-body{
+    margin-left: 2%;
+    margin-right: 1%;
+    width: 98%;
+}
+
+.project-list-item{
+    margin-left: 3%;
+    width: 90%;
+    border: 1px solid royalblue;
+}

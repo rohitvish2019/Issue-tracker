@@ -1,0 +1,23 @@
+li{
+    list-style: circle;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+body{
+    background-color: #a6d1bb59;
+    margin: 0%;
+    padding: 0%;
+}
+.project-list{
+    height: 55%;
+    overflow-y: scroll;
+}
+
+.mid-header{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+
+

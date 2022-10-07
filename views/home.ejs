@@ -1,0 +1,21 @@
+<link href="/css/home.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <div class="mid-header">
+        <span class="head1" style="width:65%; margin-left: 15%;">Ongoing projects for orgnization</span>
+        <button class="button" id="create-new-project" style="width:15%;">Create New project</button>
+    </div>
+    
+    <div class="main-container">
+        <div class="menu">
+        </div>
+        <div class="projects">
+            <ul id = 'project-list' class="project-list">
+                <%for(let i=0;i<projects.length;i++){%>
+                    <a href="/project/description/<%= projects[i]._id%>"><li class="project-item head2" id="<%= projects[i]._id%>"><%= projects[i].title%></li></a>
+                <%}%>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+</body>
